@@ -1,0 +1,58 @@
+# FlyWire raw data (never commit)
+data/raw/
+data/cache/
+*.h5
+*.zarr
+
+# Circuit build artifacts (keep small derived artifact, ignore large intermediates)
+data/intermediate/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+.env
+
+# CAVE / FlyWire secrets
+.env.*
+.cave_token*
+token.json
+*.token
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Packaging
+*.spec
+*.manifest
+
+# Logs & temp
+*.log
+logs/
+tmp/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# PyInstaller
+*.manifest
+*.pyinstaller
