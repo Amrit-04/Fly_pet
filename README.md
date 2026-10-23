@@ -1,5 +1,12 @@
 # Fly-Magotchi
 
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![PyQt6](https://img.shields.io/badge/PyQt-6-41CD52?style=flat&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
+[![Neuroscience](https://img.shields.io/badge/Connectome-FlyWire%20BANC-8A2BE2?style=flat)](https://flywire.ai/)
+[![Neuron Model](https://img.shields.io/badge/Model-LIF%20(Shiu%20et%20al.%202024)-blue?style=flat)](https://doi.org/10.1038/s41586-024-07982-0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
 A biologically inspired desktop pet powered by a FlyWire-derived Leaky Integrate-and-Fire (LIF) neural circuit. Watch a virtual *Drosophila melanogaster* exhibit naturalistic feeding and locomotor behavior driven by spiking neural dynamics.
 
 ## Overview
@@ -140,6 +147,13 @@ All parameters (biological, simulation, sensory, UI) are centralized in `src/fly
 from flymagotchi.config import Config, LIFParams, DEFAULT_CONFIG
 
 # Create custom config
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![PyQt6](https://img.shields.io/badge/PyQt-6-41CD52?style=flat&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
+[![Neuroscience](https://img.shields.io/badge/Connectome-FlyWire%20BANC-8A2BE2?style=flat)](https://flywire.ai/)
+[![Neuron Model](https://img.shields.io/badge/Model-LIF%20(Shiu%20et%20al.%202024)-blue?style=flat)](https://doi.org/10.1038/s41586-024-07982-0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 my_config = Config(
     lif=LIFParams(v_threshold=-40.0),  # Customize neuron threshold
 )
@@ -152,12 +166,33 @@ from flymagotchi.brain.circuit import Circuit
 from flymagotchi.simulation.controller import SimulationController
 
 # Load circuit
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![PyQt6](https://img.shields.io/badge/PyQt-6-41CD52?style=flat&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
+[![Neuroscience](https://img.shields.io/badge/Connectome-FlyWire%20BANC-8A2BE2?style=flat)](https://flywire.ai/)
+[![Neuron Model](https://img.shields.io/badge/Model-LIF%20(Shiu%20et%20al.%202024)-blue?style=flat)](https://doi.org/10.1038/s41586-024-07982-0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 circuit = Circuit.load("data/circuit/")
 
 # Create controller
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![PyQt6](https://img.shields.io/badge/PyQt-6-41CD52?style=flat&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
+[![Neuroscience](https://img.shields.io/badge/Connectome-FlyWire%20BANC-8A2BE2?style=flat)](https://flywire.ai/)
+[![Neuron Model](https://img.shields.io/badge/Model-LIF%20(Shiu%20et%20al.%202024)-blue?style=flat)](https://doi.org/10.1038/s41586-024-07982-0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 controller = SimulationController(circuit)
 
 # Set sugar location and advance simulation
+
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![PyQt6](https://img.shields.io/badge/PyQt-6-41CD52?style=flat&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
+[![Neuroscience](https://img.shields.io/badge/Connectome-FlyWire%20BANC-8A2BE2?style=flat)](https://flywire.ai/)
+[![Neuron Model](https://img.shields.io/badge/Model-LIF%20(Shiu%20et%20al.%202024)-blue?style=flat)](https://doi.org/10.1038/s41586-024-07982-0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 controller.set_sugar_position((500.0, 300.0))
 fly_state, rates = controller.step_frame(dt_frame_s=0.033)
 
